@@ -1,0 +1,12 @@
+@CursoApis_HostAddress = https://localhost:7152
+
+GET {{CursoApis_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+@id=4
+
+GET {{CursoApis_HostAddress}}/weatherforecast/{{id}}
+
+###
