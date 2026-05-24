@@ -21,12 +21,20 @@ namespace CursoApis.Controllers
            .ToArray();
 
         }
-
+        /// <summary>
+        /// Return all weather forecasts
+        /// </summary>
+        /// <returns></returns>
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
             return ListWeatherForecast;
         }
+        /// <summary>
+        /// Retrun weathjer by position
+        /// </summary>
+        /// <param name="id">position</param>
+        /// <returns></returns>
         [HttpGet()]
         [Route("{id}")]
         public ActionResult<WeatherForecast> GetByPosition(int id)
