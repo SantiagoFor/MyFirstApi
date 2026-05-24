@@ -38,13 +38,22 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+//should has this order
 
 app.UseCors(MyAllowOrigins);
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+//add custom middlewares 
 
+app.Use(async (context,next)=>
+{
+    var path = context.Request.Path;
+    Console.WriteLine($"Request:{ path}");
+    await next.Invoke();//indica salto a siguiente middleware
+    Console.WriteLine($"Response:{context.Response.StatusCode}");
+});
 app.MapControllers();
 
 app.Run();

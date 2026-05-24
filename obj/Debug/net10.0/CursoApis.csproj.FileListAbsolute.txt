@@ -37,3 +37,5 @@ C:\Users\santy\Documents\Source\repos\CursoApis\bin\Debug\net10.0\Swashbuckle.As
 C:\Users\santy\Documents\Source\repos\CursoApis\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\santy\Documents\Source\repos\CursoApis\obj\Debug\net10.0\CursoApis.sourcelink.json
 C:\Users\santy\Documents\Source\repos\CursoApis\bin\Debug\net10.0\Scalar.AspNetCore.dll
+C:\Users\santy\Documents\Source\repos\CursoApis\bin\Debug\net10.0\CursoApis.xml
+C:\Users\santy\Documents\Source\repos\CursoApis\obj\Debug\net10.0\CursoApis.xml

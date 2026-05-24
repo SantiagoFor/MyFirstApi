@@ -10,6 +10,7 @@
         "tags": [
           "WeatherForecast"
         ],
+        "summary": "Return all weather forecasts",
         "operationId": "GetWeatherForecast",
         "responses": {
           "200": {
@@ -49,10 +50,12 @@
         "tags": [
           "WeatherForecast"
         ],
+        "summary": "Retrun weathjer by position",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "position",
             "required": true,
             "schema": {
               "type": "integer",
